@@ -1,0 +1,14 @@
+1 = ambient
+2 = blues
+3 = electronic
+4 = pop
+5 = rock
+6 = dance
+7 = hip-hop
+8 = folk
+9 = jazz
+10 = metal
+11 = noise
+12 = experimental
+13 = r&b
+14 = classical
