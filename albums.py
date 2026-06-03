@@ -107,6 +107,11 @@ try:
                                     print("Inserting parent genre " +inputParentGenre+" into database...")
                                     cursor.execute("INSERT INTO Parent_genre (name, root_genre_id) VALUES (:bindParent, :bindRootId)", 
                                                    {"bindParent": inputParentGenre, "bindRootId": rootGenreId})
+                                    
+                                    # You need to get the parent genre id now
+                                    cursor.execute("SELECT id FROM Parent_genre WHERE name = :bindParentName", {"bindParentName": inputParentGenre})
+                                    result = cursor.fetchone()
+                                    parentGenreId = result[0]
 
                                 except ValueError as e:
                                     raise SystemExit
