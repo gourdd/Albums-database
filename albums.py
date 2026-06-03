@@ -111,8 +111,9 @@ try:
                                     # PARENT GENRE CREATION: Insert into parent genre with data
                                     # rootGenreId, inputParentGenre
                                     print("Inserting parent genre " +inputParentGenre+" into database...")
-                                    cursor.execute("INSERT INTO Parent_genre (name, root_genre_id) VALUES (:bindParent, :bindRootId)", 
-                                                   {"bindParent": inputParentGenre, "bindRootId": rootGenreId})
+                                    cursor.execute("INSERT INTO Parent_genre (name, root_genre_id) VALUES (:bindParentGenre, :bindRootId)", 
+                                                   {"bindParentGenre": inputParentGenre, "bindRootId": rootGenreId})
+                                    print(inputParentGenre+" is now in the database!")
                                     
                                     # PARENT GENRE CREATION: Extract parent genre id for genre
                                     cursor.execute("SELECT id FROM Parent_genre WHERE name = :bindParentName", {"bindParentName": inputParentGenre})
@@ -123,9 +124,18 @@ try:
                                 except ValueError as e:
                                     raise SystemExit
                             
-                            # GENRE CREATION: If parent genre DOES exist
+                            # GENRE CREATION: If parent genre DOES exist, extract parent_genre_id
                             else:
-                                print("hi")
+                                parentGenreId = result[0]
+                            
+                            # GENRE CREATION: INSERTION INTO GENRE
+                            # Add genre with parentGenreId data, either created one or already existing one.
+
+                            print()
+                            print("Inserting genre " +inputGenre+ " into the database...")
+                            cursor.execute("INSERT INTO Genre (name, parent_genre_id) VALUES (:bindName, :bindParentId)", 
+                                           {"bindName": inputGenre, "bindParentId": parentGenreId})
+                            print(inputGenre+" is now in the database!")
 
                         # GENRE CREATION: Exit via "any other number"
                         else:
