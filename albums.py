@@ -40,7 +40,7 @@ try:
                 cursor.execute("SELECT * FROM Genre WHERE name = :bindGenre", {"bindGenre": inputGenre})
                 result = cursor.fetchone()
 
-                # Genre does not exist in Genre -> Create new genre
+                # GENRE CREATION: Start
                 if result == None:
                     
                     try:
@@ -50,6 +50,7 @@ try:
                             "1 for yes, anything else to quit."
                         ))
 
+                        # GENRE CREATION: If it does not exist in Genre -> Create new genre
                         if yesNoGenre == 1:
 
                             inputParentGenre =  ""
@@ -61,7 +62,7 @@ try:
                             cursor.execute("SELECT * FROM Parent_Genre WHERE name = :bindParent", {"bindParent", inputParentGenre})
                             result = cursor.fetchone()
 
-                            # Parent genre does not exist in Parent genre -> Create new parent genre
+                            # PARENT GENRE START
                             if result == None:
 
                                 try:
@@ -71,7 +72,7 @@ try:
                                         "1 for yes, anything else to quit."
                                     ))
 
-                                    # Assign root genre to parent genre
+                                    # PARENT GENRE CREATION: Select root genre
                                     if yesNoParentGenre == 1:
                                         
                                         # Displaying all root genres
@@ -93,29 +94,44 @@ try:
                                                                 {"bindRootGenre": inputRootGenre})
                                                 result = cursor.fetchone()
 
+                                                # If root genre not present, stay in loop
                                                 if result == None:
                                                     print("Root genre is not in the database. Please select again")
-                                                else: # Success case
+
+                                                # Success: root genre is present
+                                                else: 
                                                     # root_genre_id stored in rootGenreId
                                                     rootGenreId = result[0]
                                                     rootGenreLock = 1
+
+                                    # PARENT GENRE CREATION: Exit via "any other number"
                                     else:
                                         raise SystemExit
                                     
-                                    # Insert into Parent_genre
+                                    # PARENT GENRE CREATION: Insert into parent genre with data
                                     # rootGenreId, inputParentGenre
                                     print("Inserting parent genre " +inputParentGenre+" into database...")
                                     cursor.execute("INSERT INTO Parent_genre (name, root_genre_id) VALUES (:bindParent, :bindRootId)", 
                                                    {"bindParent": inputParentGenre, "bindRootId": rootGenreId})
                                     
-                                    # You need to get the parent genre id now
+                                    # PARENT GENRE CREATION: Extract parent genre id for genre
                                     cursor.execute("SELECT id FROM Parent_genre WHERE name = :bindParentName", {"bindParentName": inputParentGenre})
                                     result = cursor.fetchone()
                                     parentGenreId = result[0]
 
+                                # PARENT GENRE CREATION: Exit via invalid input
                                 except ValueError as e:
                                     raise SystemExit
-                                
+                            
+                            # GENRE CREATION: If parent genre DOES exist
+                            else:
+                                print("hi")
+
+                        # GENRE CREATION: Exit via "any other number"
+                        else:
+                            raise SystemExit
+
+                    # GENRE CREATION: Exit via invalid input
                     except ValueError as e:
                         raise SystemExit
 
