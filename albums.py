@@ -103,6 +103,10 @@ try:
                                         raise SystemExit
                                     
                                     # Insert into Parent_genre
+                                    # rootGenreId, inputParentGenre
+                                    print("Inserting parent genre " +inputParentGenre+" into database...")
+                                    cursor.execute("INSERT INTO Parent_genre (name, root_genre_id) VALUES (:bindParent, :bindRootId)", 
+                                                   {"bindParent": inputParentGenre, "bindRootId": rootGenreId})
 
                                 except ValueError as e:
                                     raise SystemExit
