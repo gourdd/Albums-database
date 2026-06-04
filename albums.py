@@ -172,6 +172,39 @@ try:
                 else:
                     print(inputArtist+" marked as inactive")
 
+                # ARTIST CREATION: Getting details values (jsonb)
+                # json data - sometimes unknown
+                # city, country, continent, aka
+                
+                inputCity = ""
+                while (len(inputCity) == 0):
+                    
+                    try:
+                        inputCity = input("What city is the artist from?")
+
+                        inputCountry = ""
+                        while(len(inputCountry) == 0):
+                            inputCountry = input("What country is the artist from?")
+
+                            inputContinent = ""
+                            while(len(inputContinent == 0)):
+                                inputContinent = input("What continent is the artist from?")
+
+                                while(len(akaYesNo) == 0):
+                                    akaYesNo = input("Does this artist have any other names? 1 for yes, anything else for no")
+
+                                    if()
+
+                                    inputAka = ""
+
+                    except ValueError as e:
+                        print("Invalid input. Please start over from city.")
+                        inputCity = ""
+                        
+                    
+
+
+
                 
 
 
