@@ -30,17 +30,17 @@ try:
 
             if yesNoArtist == 1:
 
-                # Creating new artist : Insert genre
+                # ARTIST CREATION: Extracting genre
                 inputGenre = ""
                 while len(inputGenre) == 0:
                     inputGenreName = input("Enter the name of the artist's main genre: ")
                     if len(inputGenre) == 0:
                         print("Invalid input. Please enter again.")
 
-                cursor.execute("SELECT * FROM Genre WHERE name = :bindGenre", {"bindGenre": inputGenre})
+                cursor.execute("SELECT id FROM Genre WHERE name = :bindGenre", {"bindGenre": inputGenre})
                 result = cursor.fetchone()
 
-                # GENRE CREATION: Start
+                # GENRE CREATION: Genre is UNKNOWN. Start genre creation
                 if result == None:
                     
                     try:
@@ -136,6 +136,11 @@ try:
                             cursor.execute("INSERT INTO Genre (name, parent_genre_id) VALUES (:bindName, :bindParentId)", 
                                            {"bindName": inputGenre, "bindParentId": parentGenreId})
                             print(inputGenre+" is now in the database!")
+                            
+                            # Extracting genre_id for artist insertion
+                            cursor.execute("SELECT id FROM Genre WHERE name = :bindGenre", {"bindGenre": inputGenre})
+                            result = cursor.fetchone()
+                            genreId = result[0]
 
                         # GENRE CREATION: Exit via "any other number"
                         else:
@@ -145,15 +150,15 @@ try:
                     except ValueError as e:
                         raise SystemExit
 
-
+                # GENRE CREATION: Genre is KNOWN. Extract genre_id for artist insertion
                 else:
-                    raise SystemExit
+                    genreId = result[0]
 
-
+            # ARTIST CREATION: Exit via "any other number"
             else:
                 raise SystemExit
 
-        # If user inputs a non-integer, value error goes to SystemExit
+        # ARTIST CREATION: Exit via invalid input
         except ValueError as e:
             raise SystemExit
 
