@@ -176,36 +176,52 @@ try:
                 # json data - sometimes unknown
                 # city, country, continent, aka
                 
-                inputCity = ""
-                while (len(inputCity) == 0):
-                    
+                jsonLock = 0
+                while(jsonLock == 0):
                     try:
-                        inputCity = input("What city is the artist from?")
+                        cityYesNo = input("Is the city of the artist known? 1 for yes, any other number for no")
 
-                        inputCountry = ""
-                        while(len(inputCountry) == 0):
-                            inputCountry = input("What country is the artist from?")
+                        if(cityYesNo == 1):
+                            
+                            inputCity = ""
+                            while(len(inputCity) == 0):
+                                inputCity = input("What city is the artist from?")
+                                if(len(inputCity) == 0):
+                                    print("Invalid input. Please enter again.")
+                        
+                        countryYesNo = input("Is the country of the artist known? 1 for yes, any other number for no")
 
+                        if(countryYesNo == 1):
+                            inputCountry = ""
+                            while(len(inputCountry) == 0):
+                                inputCountry = input("What country is the artist from?")
+                                if(len(inputCountry) == 0):
+                                    print("Invalid input. Please enter again.")
+
+                        continentYesNo = input("Is the continent of the artist known? 1 for yes, any other number for no")
+
+                        if(continentYesNo == 1):
                             inputContinent = ""
-                            while(len(inputContinent == 0)):
+                            while(len(inputContinent) == 0):
                                 inputContinent = input("What continent is the artist from?")
+                                if(len(inputContinent == 0)):
+                                    print("Invalid input. Please enter again.")
+                        
+                        # Ask for "aka" field for .json data. Keep asking until stop
+                        akaYesNo = input("Has the artist released music under another name? 1 for yes, any other number for no")
 
-                                while(len(akaYesNo) == 0):
-                                    akaYesNo = input("Does this artist have any other names? 1 for yes, anything else for no")
+                        if(akaYesNo == 1):
+                            inputAka = ""
+                            while(len(inputAka) == 0):
+                                inputAka = input("What are their aliases?")
 
-                                    if()
 
-                                    inputAka = ""
+
+
+                            
 
                     except ValueError as e:
-                        print("Invalid input. Please start over from city.")
-                        inputCity = ""
-                        
-                    
-
-
-
-                
+                        print("Invalid input. Please start over.")
 
 
 
