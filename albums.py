@@ -154,6 +154,29 @@ try:
                 else:
                     genreId = result[0]
 
+                print(inputArtist+" marked as "+inputGenre)
+                # Genre_id has been found, now start insertion process
+                # variables: inputArtist, inputGenre, inputActive, inputDetails
+
+                # ARTIST CREATION: Getting Active value (true or false)
+                while(inputActive != 1 or inputActive != 2):
+                    try: 
+                        inputActive = int(input("Is "+inputArtist+" active? (1 for yes, 2 for no)"))
+                        if(inputActive != 1 or inputActive !=2):
+                            print("Invalid number, please enter again")
+                    except ValueError as e:
+                        print("Invalid input. Please enter again")
+
+                if(inputActive == 1):
+                    print(inputArtist+" marked as active")
+                else:
+                    print(inputArtist+" marked as inactive")
+
+                
+
+
+
+
             # ARTIST CREATION: Exit via "any other number"
             else:
                 raise SystemExit
