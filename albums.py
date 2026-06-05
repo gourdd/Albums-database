@@ -214,9 +214,10 @@ try:
 
                 # ARTIST CREATION: Location json finished. Insert artist then ask about aka because that has to go infinite
                 # inputArtist, inputGenre, inputActive, inputCity, inputCountry, inputContinent
+                # For simplicity probably add artist then add details
 
-                cursor.execute("INSERT INTO Artist (name, genre_id, active, details) VALUES" \
-                "               (:bindArtist, :bindGenre, :bindActive, :bindDetails)",
+                cursor.execute("INSERT INTO Artist (name, genre_id, active) VALUES" \
+                "               (:bindArtist, :bindGenre, :bindActive)",
                                 {"bindArtist": inputArtist, "bindGenre": inputGenre, "bindActive": inputActive})
                     
 
