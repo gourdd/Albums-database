@@ -207,21 +207,28 @@ try:
                                 if(len(inputContinent == 0)):
                                     print("Invalid input. Please enter again.")
                         
-                        # Ask for "aka" field for .json data. Keep asking until stop
-                        akaYesNo = input("Has the artist released music under another name? 1 for yes, any other number for no")
-
-                        if(akaYesNo == 1):
-                            inputAka = ""
-                            while(len(inputAka) == 0):
-                                inputAka = input("What are their aliases?")
-
-
-
-
-                            
+                        jsonLock = 1
 
                     except ValueError as e:
                         print("Invalid input. Please start over.")
+
+                # ARTIST CREATION: Location json finished. Insert artist then ask about aka because that has to go infinite
+                # inputArtist, inputGenre, inputActive, inputCity, inputCountry, inputContinent
+
+                cursor.execute("INSERT INTO Artist (name, genre_id, active, details) VALUES" \
+                "               (:bindArtist, :bindGenre, :bindActive, :bindDetails)",
+                                {"bindArtist": inputArtist, "bindGenre": inputGenre, "bindActive": inputActive})
+                    
+
+            # Ask for "aka" field for .json data. Keep asking until stop
+            # Must be done with jsonb command, so do after artist insertion
+            akaYesNo = input("Has the artist released music under another name? 1 for yes, any other number for no")
+
+            if(akaYesNo == 1):
+                inputAka = ""
+                akaExit = 0
+                while(len(inputAka) == 0 or akaExit == 0):
+                    inputAka = input("What are their aliases?")
 
 
 
