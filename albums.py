@@ -174,9 +174,11 @@ try:
 
                 # ARTIST CREATION: Inserting artist without json data
                 # Add the json data as you go along
-                cursor.execute("INSERT INTO Artist (name, genre_id, active) VALUES" \
-                "               (:bindArtist, :bindGenre, :bindActive)",
+                print("Inserting "+inputArtist+" into the database...")
+                cursor.execute("INSERT INTO Artist (name, genre_id, active, details) VALUES" \
+                "               (:bindArtist, :bindGenre, :bindActive, jsonb('{}'))",
                                 {"bindArtist": inputArtist, "bindGenre": inputGenre, "bindActive": inputActive})
+                print("Artist "+inputArtist+" is now in the database!")
                 
                 # ARTIST CREATION: Getting artist id for json insertions and ALBUM insertion
                 cursor.execute("SELECT id FROM Artist WHERE name = :bindName", {"bindName": inputArtist})
@@ -188,6 +190,7 @@ try:
                 # json data - sometimes unknown
                 # city, country, continent, aka
                 
+                print("Now requesting additional data about your artist:")
                 jsonLock = 0
                 while(jsonLock == 0):
                     try:
@@ -201,7 +204,7 @@ try:
                                 if(len(inputCity) == 0):
                                     print("Invalid input. Please enter again.")
                             
-                            cursor.execute("INSERT INTO Album (details) VALUES (jsonb_set())")
+                            cursor.execute("UPDATE Album SET details = jsonb_set(details, '$.city': :bindCity)")
 
                         
                         countryYesNo = input("Is the country of the artist known? 1 for yes, any other number for no")
