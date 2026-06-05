@@ -172,6 +172,18 @@ try:
                 else:
                     print(inputArtist+" marked as inactive")
 
+                # ARTIST CREATION: Inserting artist without json data
+                # Add the json data as you go along
+                cursor.execute("INSERT INTO Artist (name, genre_id, active) VALUES" \
+                "               (:bindArtist, :bindGenre, :bindActive)",
+                                {"bindArtist": inputArtist, "bindGenre": inputGenre, "bindActive": inputActive})
+                
+                # ARTIST CREATION: Getting artist id for json insertions and ALBUM insertion
+                cursor.execute("SELECT id FROM Artist WHERE name = :bindName", {"bindName": inputArtist})
+                result = cursor.fetchone()
+
+                artistId = result[0]
+
                 # ARTIST CREATION: Getting details values (jsonb)
                 # json data - sometimes unknown
                 # city, country, continent, aka
@@ -188,6 +200,9 @@ try:
                                 inputCity = input("What city is the artist from?")
                                 if(len(inputCity) == 0):
                                     print("Invalid input. Please enter again.")
+                            
+                            cursor.execute("INSERT INTO Album (details) VALUES (jsonb_set())")
+
                         
                         countryYesNo = input("Is the country of the artist known? 1 for yes, any other number for no")
 
@@ -216,9 +231,9 @@ try:
                 # inputArtist, inputGenre, inputActive, inputCity, inputCountry, inputContinent
                 # For simplicity probably add artist then add details
 
-                cursor.execute("INSERT INTO Artist (name, genre_id, active) VALUES" \
-                "               (:bindArtist, :bindGenre, :bindActive)",
-                                {"bindArtist": inputArtist, "bindGenre": inputGenre, "bindActive": inputActive})
+
+                
+                
                     
 
             # Ask for "aka" field for .json data. Keep asking until stop
