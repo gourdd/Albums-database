@@ -58,12 +58,12 @@
           <mxGeometry height="60" width="120" x="1100" y="600" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-26" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Notes" vertex="1">
-          <mxGeometry height="90" width="140" x="110" y="30" as="geometry">
+          <mxGeometry height="170" width="140" x="110" y="30" as="geometry">
             <mxRectangle height="30" width="70" x="350" y="50" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-27" parent="xgELYtRN8pwQXO-F7E_u-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Give an option to &lt;b&gt;exit.&lt;/b&gt;, after &lt;b&gt;&quot;would you like to insert&quot;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="60" width="140" y="30" as="geometry" />
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-27" parent="xgELYtRN8pwQXO-F7E_u-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Give an option to &lt;b&gt;exit.&lt;/b&gt;, after &lt;b&gt;&quot;would you like to insert&quot;&lt;/b&gt;&lt;div&gt;- For every string insertion (typing genre name, artist name, city), do a len() check, make sure it is greater than 0.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="140" y="30" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Check if there is a tuple in the &lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;Artist &lt;/font&gt;table with the name inputArtist" vertex="1">
           <mxGeometry height="60" width="120" x="930" y="150" as="geometry" />
@@ -483,7 +483,7 @@
         <mxCell id="xgELYtRN8pwQXO-F7E_u-161" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-160" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.19;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="xgELYtRN8pwQXO-F7E_u-158">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-173" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-162" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-172">
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-204" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-162" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-202">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-162" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="if isCityKnown == 1:" vertex="1">
@@ -506,46 +506,58 @@
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-175" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-172" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="980" y="4060" as="targetPoint" />
+            <mxPoint x="980" y="4270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-176" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-175" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;artistCity&lt;/font&gt;" vertex="1">
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-176" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-175" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;detailsData[&lt;/font&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&#39;city&#39;&lt;/font&gt;&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;]&lt;/font&gt;" vertex="1">
           <mxGeometry relative="1" x="-0.1389" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-172" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;What city are they from?&lt;/i&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="920" y="3950" as="geometry" />
+          <mxGeometry height="60" width="120" x="920" y="4160" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-180" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-178" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-179">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-181" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-180" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;aristCountry&lt;/font&gt;" vertex="1">
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-181" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-180" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;detailsData[&lt;/font&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&#39;country&#39;&lt;/font&gt;&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;]&lt;/font&gt;" vertex="1">
           <mxGeometry relative="1" x="-0.3333" y="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-178" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;What country is that city in?&lt;/i&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="920" y="4060" as="geometry" />
+          <mxGeometry height="60" width="120" x="920" y="4270" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-184" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-179" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="980" y="4290" as="targetPoint" />
+            <mxPoint x="980" y="4500" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-185" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-184" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;artistContinent&lt;/font&gt;" vertex="1">
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-185" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-184" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;detailsData[&lt;/font&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&#39;continent&#39;&lt;/font&gt;&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;]&lt;/font&gt;" vertex="1">
           <mxGeometry relative="1" x="-0.2222" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-179" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;What continent is that country on?&lt;/i&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="920" y="4170" as="geometry" />
+          <mxGeometry height="60" width="120" x="920" y="4380" as="geometry" />
         </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-186" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Add &lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;artistCity, artistCountry, artistContinent&lt;/font&gt;, to a &lt;b&gt;dictionary&lt;/b&gt;. Convert that dictionary to a string with json.dumps, which will be used in the jsonb() insertion for &lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;Artist.details&lt;/font&gt;&amp;nbsp;" vertex="1">
-          <mxGeometry height="100" width="190" x="890" y="4290" as="geometry" />
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-186" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="100" width="190" x="890" y="4500" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-187" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="artistDetails =&amp;nbsp;" vertex="1">
-          <mxGeometry height="70" width="405" x="777.5" y="4450" as="geometry" />
+          <mxGeometry height="70" width="405" x="787.5" y="4700" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-206" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-202" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-205">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-202" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Create an empty dictionary called &lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;detailsData&lt;/font&gt;. User&#39;s input will be added to keys of that dictionary. Which will then be inserted as json blob into the &lt;b&gt;details&lt;/b&gt;&amp;nbsp;column" vertex="1">
+          <mxGeometry height="100" width="180" x="890" y="3950" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-207" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-205" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-172">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-205" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;detailsData &lt;/font&gt;= {}" vertex="1">
+          <mxGeometry height="60" width="120" x="920" y="4070" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

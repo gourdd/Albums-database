@@ -83,5 +83,19 @@ print()
 print("For-each loop will print out 'first' value and 'second' value in each item in the dictionary:")
 for key, value in student.items():
     print(key, value)
+print()
+
+# Empty dictionary
+print("This is what happens when you print an empty dictionary:")
+emptyDictionary = {}
+print(emptyDictionary)
+print()
+
+# Creating dictionary by inserting
+print("Creating an empty dictionary, then adding a name to it:")
+testDictionary = {}
+testDictionary['name'] = 'Phil'
+print(testDictionary)
+
 
 print()
