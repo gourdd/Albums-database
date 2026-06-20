@@ -1,0 +1,553 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="Page-1" id="9aSEr8HFCkBT2hAoJ8n_">
+    <mxGraphModel dx="1240" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="8000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-6" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="990" y="90" as="sourcePoint" />
+            <mxPoint x="990" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-7" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;inputArtist&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.06" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-23" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Get the &lt;b style=&quot;&quot;&gt;id&lt;/b&gt;&amp;nbsp;from the Artist tuple where name = &quot;inputArtist&quot;. Need when inserting album" vertex="1">
+          <mxGeometry height="80" width="120" x="1100" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-10" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="990" y="210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-18" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-16" value="if artist IS NOT found">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-19" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-17" value="if artist IS found">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="cursor.execute(&quot;SELECT * FROM &lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;Artist &lt;/font&gt;WHERE name = :bindArtist;&quot;, {&quot;bindArtist&quot;: &lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;inputArtist&lt;/font&gt;})&lt;div&gt;result = cursor.fetchone()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="580" x="700" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-33" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-32">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="450" />
+              <mxPoint x="660" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-16" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="if result == None:" vertex="1">
+          <mxGeometry height="50" width="120" x="760" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-22" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="else:" vertex="1">
+          <mxGeometry height="50" width="120" x="1100" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;artistId &lt;/font&gt;= result[0]" vertex="1">
+          <mxGeometry height="60" width="120" x="1100" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-26" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Notes" vertex="1">
+          <mxGeometry height="90" width="140" x="110" y="30" as="geometry">
+            <mxRectangle height="30" width="70" x="350" y="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-27" parent="xgELYtRN8pwQXO-F7E_u-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Give an option to &lt;b&gt;exit.&lt;/b&gt;, after &lt;b&gt;&quot;would you like to insert&quot;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Check if there is a tuple in the &lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;Artist &lt;/font&gt;table with the name inputArtist" vertex="1">
+          <mxGeometry height="60" width="120" x="930" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Type the artist of the album you would like to insert:&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="930" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-37" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-36" value="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-44" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-43" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Artist &lt;/i&gt;&lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;inputArtist&lt;/font&gt;&lt;i&gt;&lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;&amp;nbsp;&lt;/font&gt;not found in the database. Would you like to insert them into the database?&amp;nbsp;&lt;/i&gt;&lt;div&gt;&lt;i&gt;1 for yes 2 to quit&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="120" x="600" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-42" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Transaction closed. Have a good day.&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="460" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-40" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="xgELYtRN8pwQXO-F7E_u-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Use while-loop to prevent different values.&lt;div&gt;Try-except for ValueError&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="460" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Somehow get out of the loop. &lt;b&gt;DO NOT COMMIT&lt;/b&gt;&amp;nbsp;&lt;b&gt;CHANGES&lt;/b&gt;!" vertex="1">
+          <mxGeometry height="60" width="120" x="460" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-46" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-47" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-46" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;inputGenre&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Enter the name of the artist&#39;s main genre:&amp;nbsp;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="740" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-49" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Check if there is a tuple in the Genre table with the name inputGenre" vertex="1">
+          <mxGeometry height="60" width="120" x="740" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-52" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-50">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="910" />
+              <mxPoint x="650" y="910" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-53" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="910" />
+              <mxPoint x="1360" y="910" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-48" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="cursor.execute(&quot;SELECT * FROM &lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;Genre &lt;/font&gt;WHERE name = :bindGenre;&quot;, {&quot;bindGenre&quot;: &lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;inputGenre&lt;/font&gt;})&lt;div&gt;result = cursor.fetchone()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="580" x="510" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-59" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-58">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="1010" />
+              <mxPoint x="490" y="1010" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-50" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="if result == None:" vertex="1">
+          <mxGeometry height="50" width="120" x="590" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-55" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-51" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="else:" vertex="1">
+          <mxGeometry height="50" width="120" x="1300" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-57" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Get the &lt;b style=&quot;&quot;&gt;id&lt;/b&gt;&amp;nbsp;from the Genre tuple where name = &quot;inputGenre&quot;. Need when inserting album" vertex="1">
+          <mxGeometry height="80" width="120" x="1300" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-134" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-129">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1360" y="3070" />
+              <mxPoint x="1200" y="3070" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-56" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;genreId&amp;nbsp;&lt;/font&gt;= result[0]" vertex="1">
+          <mxGeometry height="60" width="120" x="1300" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-63" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-61" value="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-65" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-64" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Genre&amp;nbsp;&lt;/i&gt;&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;inputGenre&lt;/font&gt;&lt;i&gt;&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;&amp;nbsp;&lt;/font&gt;not found in the database. Would you like to insert it into the database?&lt;/i&gt;&lt;div&gt;&lt;i&gt;1 for yes 2 to quit&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="120" x="430" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-60" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-61" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Transaction closed. Have a good day.&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="260" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-62" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Somehow get out of the loop. &lt;b&gt;DO NOT COMMIT&lt;/b&gt;&amp;nbsp;&lt;b&gt;CHANGES&lt;/b&gt;!" vertex="1">
+          <mxGeometry height="60" width="120" x="260" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-67" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-66" value="&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;inputParentGenre&lt;/font&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-64" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Enter the name of your genre&#39;s parent genre:&amp;nbsp;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="600" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-72" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-66" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Check if there&#39;s a tuple in &lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;Parent_Genre&lt;/font&gt; table with the name inputParentGenre" vertex="1">
+          <mxGeometry height="60" width="120" x="600" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-70" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="xgELYtRN8pwQXO-F7E_u-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-68" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Use while-loop to prevent different values.&lt;div&gt;Try-except for ValueError&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="260" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-74" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-76" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-71" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="cursor.execute(&quot;SELECT * FROM &lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;Genre &lt;/font&gt;WHERE name = :bindParentGenre;&quot;, {&quot;bindParentGenre&quot;: &lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;inputParentGenre&lt;/font&gt;})&lt;div&gt;result = cursor.fetchone()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="675" x="322.5" y="1380" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-82" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-81">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="1580" />
+              <mxPoint x="320" y="1580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-73" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="if result == None:" vertex="1">
+          <mxGeometry height="50" width="120" x="420" y="1510" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-78" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-75" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="else:" vertex="1">
+          <mxGeometry height="50" width="120" x="930" y="1510" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-80" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-77" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Get the &lt;b style=&quot;&quot;&gt;id&lt;/b&gt;&amp;nbsp;from the Parent_Genre tuple where name = &quot;inputParentGenre&quot;. Need when inserting genre" vertex="1">
+          <mxGeometry height="90" width="120" x="930" y="1600" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-117" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-116">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="2510" />
+              <mxPoint x="800" y="2510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-79" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;parentGenreId&amp;nbsp;&lt;/font&gt;= result[0]" vertex="1">
+          <mxGeometry height="60" width="120" x="930" y="1730" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-84" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-83" value="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-90" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-89" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-81" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Parent genre &lt;/i&gt;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;inputParentGenre&lt;/font&gt;&lt;i&gt;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;&amp;nbsp;&lt;/font&gt;not found in the database. Would you like to insert it into the database?&lt;/i&gt;&lt;div&gt;&lt;i&gt;1 for yes 2 to quit&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="240" y="1600" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-86" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-83" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Transaction closed. Have a good day.&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="110" y="1760" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-85" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Somehow get out of the loop. &lt;b&gt;DO NOT COMMIT&lt;/b&gt;&amp;nbsp;&lt;b&gt;CHANGES&lt;/b&gt;!" vertex="1">
+          <mxGeometry height="60" width="120" x="110" y="1870" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-88" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="xgELYtRN8pwQXO-F7E_u-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-87" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Use while-loop to prevent different values.&lt;div&gt;Try-except for ValueError&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="110" y="1460" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-93" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-89" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;*displays root genres*:&lt;/i&gt;&lt;div&gt;&lt;i&gt;Rock&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;Hip Hop&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;Ambient&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;Electronic&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;Classical&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;......&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="150" x="460" y="1640" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-97" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="535" y="1970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-98" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-97" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;color: rgb(255, 255, 0);&quot;&gt;inputRootGenreId&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-92" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Select your parent genre&#39;s root genre:&amp;nbsp;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="475" y="1850" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-128" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="xgELYtRN8pwQXO-F7E_u-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-99" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Use while-loop to prevent different values.&lt;div&gt;Try-except for ValueError&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="310" y="1780" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-107" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-104">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-101" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Inserting parent genre&lt;/i&gt;&amp;nbsp;inputParentGenre &lt;i&gt;into the database...&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="145" x="465" y="1970" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-109" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="537.5" y="2180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-104" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;Parent_Genre Insertion&lt;/font&gt;&lt;/b&gt;&lt;div&gt;Insert &lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;inputParentGenre &lt;/font&gt;into Parent_Genre table with &lt;font style=&quot;color: rgb(255, 255, 0);&quot;&gt;rootGenreId &lt;/font&gt;as foreign key&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="162.5" x="456.25" y="2070" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-113" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-108" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="cursor.execute(&quot;INSERT INTO &lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;Parent_Genre&lt;/font&gt;&amp;nbsp;(name, root_genre_id) VALUES (:bindParentGenre, :bindRootId);&quot; ,{&quot;bindParentGenre&quot;: &lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;inputParentGenre&lt;/font&gt;, &quot;bindRootId&quot;: &lt;font style=&quot;color: rgb(255, 255, 0);&quot;&gt;inputRootGenreId&lt;/font&gt;})" vertex="1">
+          <mxGeometry height="70" width="675" x="205" y="2180" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-115" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-110" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;Parent_genre&lt;/font&gt; now inserted. Need to get its &lt;b&gt;id&lt;/b&gt;&amp;nbsp;value to add to&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(255, 128, 0); background-color: transparent;&quot;&gt;parentGenreId&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;for &lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 51, 153));&quot;&gt;genre insertion&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="157.5" x="463.75" y="2280" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-118" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="543" y="2510" />
+              <mxPoint x="800" y="2510" />
+            </Array>
+            <mxPoint x="800" y="2540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-114" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="cursor.execute(&quot;SELECT * FROM&amp;nbsp;&lt;span style=&quot;color: rgb(255, 128, 0);&quot;&gt;Parent_Genre&lt;/span&gt;&amp;nbsp;WHERE name = &#39;:bindParentGenre&#39;;&quot;, {&quot;bindParentGenre&quot;:&amp;nbsp;&lt;span style=&quot;color: rgb(255, 128, 0);&quot;&gt;inputParentGenre&lt;/span&gt;})&lt;div&gt;result = cursor.fetchone()&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: rgb(255, 128, 0);&quot;&gt;parentGenreId&lt;/span&gt;&amp;nbsp;= result[0]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="782.5" x="151.25" y="2390" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-121" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-116" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Obtained parent_genre_id...&lt;/i&gt;&lt;div&gt;&lt;i&gt;Inserting genre&lt;/i&gt;&amp;nbsp;&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;inputGenre &lt;/font&gt;&lt;i&gt;into the database...&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="210" x="695" y="2540" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-123" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-120" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 51, 153));&quot;&gt;Genre insertion&lt;/font&gt;&lt;/b&gt;&lt;div&gt;Insert&amp;nbsp;&lt;span style=&quot;color: rgb(255, 51, 153); background-color: transparent;&quot;&gt;inputGenre&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 51, 153); background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;into Genre table with&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(255, 128, 0);&quot;&gt;parentGenreId&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;as foreign key&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="715" y="2640" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-125" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-122" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="cursor.execute(&quot;INSERT INTO &lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;Genre &lt;/font&gt;(name, parent_genre_id) VALUES&amp;nbsp;(:bindGenre, :bindParentId);&quot;, {&quot;bindGenre&quot;: &lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;inputGenre&lt;/font&gt;, &quot;bindParentId&quot;: &lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;parentGenreId&lt;/font&gt;})&amp;nbsp;" vertex="1">
+          <mxGeometry height="80" width="665.31" x="467.34000000000003" y="2730" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-127" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-124" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;&lt;font&gt;Genre&lt;/font&gt; &lt;/font&gt;now inserted. Need to get its &lt;b&gt;id&lt;/b&gt;&amp;nbsp;value to add to&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(255, 51, 153);&quot;&gt;genreId&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;for &lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 255, 255));&quot;&gt;artist insertion&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="157.5" x="721.25" y="2840" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-133" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-126" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-129">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-126" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="cursor.execute(&quot;SELECT * FROM &lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;Genre &lt;/font&gt;WHERE name = :bindGenre&quot;, {&quot;bindGenre&quot;: &lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;inputGenre&lt;/font&gt;})&lt;div&gt;result = cursor.fetchone()&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;genreId &lt;/font&gt;= result[0]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="751.25" x="424.38" y="2950" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-136" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-129" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-129" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="We now have the&lt;div&gt;artist name =&lt;font style=&quot;background-color: transparent; color: rgb(0, 255, 255);&quot;&gt;inputArtist&lt;/font&gt;&lt;i style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;genre_id =&amp;nbsp;&lt;span style=&quot;color: rgb(255, 51, 153); background-color: transparent;&quot;&gt;genreId&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(255, 51, 153); background-color: transparent;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;Ask for more information&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="1120" y="3110" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-140" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-139">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1200" y="3320" />
+              <mxPoint x="1040" y="3320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-141" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-140" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="isActive" vertex="1">
+          <mxGeometry relative="1" x="-0.8667" y="1" as="geometry">
+            <mxPoint x="19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-146" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-145">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-150" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-149">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1200" y="3320" />
+              <mxPoint x="1360" y="3320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-135" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Is &lt;/i&gt;&lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;inputArtist&lt;/font&gt;&lt;i&gt;&lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;&amp;nbsp;&lt;/font&gt;still active? 1 for yes 2 for no:&amp;nbsp;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1140" y="3230" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-138" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="xgELYtRN8pwQXO-F7E_u-135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-137" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Use while-loop to prevent different values.&lt;div&gt;Try-except for ValueError&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="950" y="3170" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-143" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-142">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-139" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="if isActive == 1:&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="980" y="3340" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-156" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-142" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-155">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-142" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;marked&amp;nbsp;&lt;/i&gt;&lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;inputArtist&lt;/font&gt;&lt;i&gt;&lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;i&gt;as active&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="980" y="3430" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-157" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-144" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-155">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-144" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;marked&amp;nbsp;&lt;/i&gt;&lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;inputArtist&lt;/font&gt;&lt;i&gt;&lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;i&gt;as inactive&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1140" y="3430" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-148" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-145" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-144">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-145" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="else:&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;if isActive == 2:&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;isActive = 0&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1140" y="3340" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-153" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-152">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-149" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;div&gt;else:&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1300" y="3340" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-154" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-135">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1470" y="3460" />
+              <mxPoint x="1470" y="3210" />
+              <mxPoint x="1230" y="3210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-152" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Invalid input. Please enter again" vertex="1">
+          <mxGeometry height="60" width="120" x="1300" y="3430" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-159" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-158">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-155" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="We now have the&lt;div&gt;artist name =&lt;font style=&quot;background-color: transparent; color: rgb(0, 255, 255);&quot;&gt;inputArtist&lt;/font&gt;&lt;i style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;genre_id =&amp;nbsp;&lt;span style=&quot;color: rgb(255, 51, 153); background-color: transparent;&quot;&gt;genreId&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;active = isActive&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(255, 51, 153); background-color: transparent;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;Move onto blob data&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="170" x="1040" y="3560" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-163" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-162">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1125" y="3820" />
+              <mxPoint x="980" y="3820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-165" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-164">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-167" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-166">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1125" y="3820" />
+              <mxPoint x="1270" y="3820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-168" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-167" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="isCityKnown" vertex="1">
+          <mxGeometry relative="1" x="-0.8667" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-158" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Is&amp;nbsp;&lt;/i&gt;&lt;font style=&quot;background-color: transparent; color: rgb(0, 255, 255);&quot;&gt;inputArtist&lt;/font&gt;&lt;i&gt;&#39;s city known? 1 for yes 2 for no:&amp;nbsp;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1065" y="3720" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-160" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Use while-loop to prevent different values.&lt;div&gt;Try-except for ValueError&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="890" y="3650" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-161" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-160" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.19;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="xgELYtRN8pwQXO-F7E_u-158">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-173" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-162" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-172">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-162" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="if isCityKnown == 1:" vertex="1">
+          <mxGeometry height="60" width="120" x="920" y="3860" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-164" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="else:&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;if isCityKnown == 2:&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="135" x="1057.5" y="3860" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-171" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-166" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-158">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1390" y="3890" />
+              <mxPoint x="1390" y="3700" />
+              <mxPoint x="1155" y="3700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-166" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="else:" vertex="1">
+          <mxGeometry height="60" width="120" x="1210" y="3860" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-175" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-172" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="980" y="4060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-176" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-175" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;artistCity&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1389" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-172" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;What city are they from?&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="920" y="3950" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-180" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-178" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-179">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-181" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-180" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;aristCountry&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.3333" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-178" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;What country is that city in?&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="920" y="4060" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-184" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-179" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="980" y="4290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-185" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-184" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;artistContinent&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2222" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-179" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;What continent is that country on?&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="920" y="4170" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-186" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Add &lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;artistCity, artistCountry, artistContinent&lt;/font&gt;, to a &lt;b&gt;dictionary&lt;/b&gt;. Convert that dictionary to a string with json.dumps, which will be used in the jsonb() insertion for &lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;Artist.details&lt;/font&gt;&amp;nbsp;" vertex="1">
+          <mxGeometry height="100" width="190" x="890" y="4290" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-187" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="artistDetails =&amp;nbsp;" vertex="1">
+          <mxGeometry height="70" width="405" x="777.5" y="4450" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
