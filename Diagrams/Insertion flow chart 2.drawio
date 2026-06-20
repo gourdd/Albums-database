@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
   <diagram name="Page-1" id="9aSEr8HFCkBT2hAoJ8n_">
-    <mxGraphModel dx="1240" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="8000" math="0" shadow="0">
+    <mxGraphModel dx="1188" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="8000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -209,8 +209,8 @@
         <mxCell id="xgELYtRN8pwQXO-F7E_u-76" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-75">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-71" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="cursor.execute(&quot;SELECT * FROM &lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;Genre &lt;/font&gt;WHERE name = :bindParentGenre;&quot;, {&quot;bindParentGenre&quot;: &lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;inputParentGenre&lt;/font&gt;})&lt;div&gt;result = cursor.fetchone()&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="675" x="322.5" y="1380" as="geometry" />
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-71" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="cursor.execute(&quot;SELECT * FROM &lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;Parent_Genre &lt;/font&gt;WHERE name = :bindParentGenre;&quot;, {&quot;bindParentGenre&quot;: &lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;inputParentGenre&lt;/font&gt;})&lt;div&gt;result = cursor.fetchone()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="697.5" x="311.25" y="1380" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-82" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-81">
           <mxGeometry relative="1" as="geometry">
@@ -298,7 +298,7 @@
         <mxCell id="xgELYtRN8pwQXO-F7E_u-107" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-104">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-101" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Inserting parent genre&lt;/i&gt;&amp;nbsp;inputParentGenre &lt;i&gt;into the database...&lt;/i&gt;" vertex="1">
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-101" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Inserting parent genre&lt;/i&gt;&amp;nbsp;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;inputParentGenre &lt;/font&gt;&lt;i&gt;into the database...&lt;/i&gt;" vertex="1">
           <mxGeometry height="60" width="145" x="465" y="1970" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-109" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
@@ -524,7 +524,7 @@
           <mxGeometry height="70" width="210" x="880" y="4470" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-187" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="artistDetails =&amp;nbsp;" vertex="1">
-          <mxGeometry height="70" width="405" x="1300" y="4410" as="geometry" />
+          <mxGeometry height="70" width="405" x="1430" y="4950" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-207" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-172">
           <mxGeometry relative="1" as="geometry">
@@ -626,6 +626,14 @@
         <mxCell id="xgELYtRN8pwQXO-F7E_u-245" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Use while-loop to prevent different values.&lt;div&gt;Try-except for ValueError&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="120" x="840" y="4580" as="geometry" />
         </mxCell>
+        <mxCell id="VBEOhlTsfUxGTW4yFh_g-12" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-247" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VBEOhlTsfUxGTW4yFh_g-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VBEOhlTsfUxGTW4yFh_g-16" connectable="0" parent="VBEOhlTsfUxGTW4yFh_g-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;color: rgb(255, 229, 153);&quot;&gt;akaList &lt;/font&gt;= []&lt;div&gt;&lt;font style=&quot;color: rgb(255, 229, 153);&quot;&gt;akaLoopLock &lt;/font&gt;= 0&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 229, 153);&quot;&gt;akaCounter &lt;/font&gt;= 1&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.15" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-247" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="if hasAka == 1:" vertex="1">
           <mxGeometry height="60" width="120" x="930" y="4760" as="geometry" />
         </mxCell>
@@ -649,6 +657,38 @@
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-253" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Invalid input. Please enter again" vertex="1">
           <mxGeometry height="60" width="120" x="1200" y="4850" as="geometry" />
+        </mxCell>
+        <mxCell id="VBEOhlTsfUxGTW4yFh_g-9" edge="1" parent="1" source="VBEOhlTsfUxGTW4yFh_g-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VBEOhlTsfUxGTW4yFh_g-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VBEOhlTsfUxGTW4yFh_g-10" connectable="0" parent="VBEOhlTsfUxGTW4yFh_g-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;color: rgb(255, 229, 153); font-size: 12px; text-wrap-mode: wrap; background-color: rgb(27, 29, 30);&quot;&gt;akaInput&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.175" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VBEOhlTsfUxGTW4yFh_g-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Enter alternate name #&lt;/i&gt;&lt;font style=&quot;color: rgb(255, 229, 153);&quot;&gt;akaCounter&lt;/font&gt;&lt;i&gt;:&amp;nbsp;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="930" y="5030" as="geometry" />
+        </mxCell>
+        <mxCell id="VBEOhlTsfUxGTW4yFh_g-18" edge="1" parent="1" source="VBEOhlTsfUxGTW4yFh_g-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="VBEOhlTsfUxGTW4yFh_g-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VBEOhlTsfUxGTW4yFh_g-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;color: rgb(255, 229, 153);&quot;&gt;akaList&lt;/font&gt;.append(&lt;font style=&quot;color: rgb(255, 229, 153);&quot;&gt;akaInput&lt;/font&gt;)" vertex="1">
+          <mxGeometry height="60" width="160" x="910" y="5230" as="geometry" />
+        </mxCell>
+        <mxCell id="VBEOhlTsfUxGTW4yFh_g-8" edge="1" parent="1" source="VBEOhlTsfUxGTW4yFh_g-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VBEOhlTsfUxGTW4yFh_g-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VBEOhlTsfUxGTW4yFh_g-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="We will take&amp;nbsp;&lt;span style=&quot;color: rgb(255, 229, 153);&quot;&gt;akaInput&amp;nbsp;&lt;/span&gt;and &lt;b&gt;append&lt;/b&gt;&amp;nbsp;it to&amp;nbsp;&lt;span style=&quot;color: rgb(255, 229, 153);&quot;&gt;akaList&lt;/span&gt;." vertex="1">
+          <mxGeometry height="60" width="120" x="930" y="5140" as="geometry" />
+        </mxCell>
+        <mxCell id="VBEOhlTsfUxGTW4yFh_g-13" edge="1" parent="1" source="VBEOhlTsfUxGTW4yFh_g-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="VBEOhlTsfUxGTW4yFh_g-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VBEOhlTsfUxGTW4yFh_g-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Ask user to enter alternate names one-by-one. Those names will be added to the list&amp;nbsp;&lt;span style=&quot;color: rgb(255, 229, 153);&quot;&gt;akaList&lt;/span&gt;. After the list is finished, add&amp;nbsp;&lt;span style=&quot;color: rgb(255, 229, 153);&quot;&gt;akaList&amp;nbsp;&lt;/span&gt;to a key &#39;aka&#39; in the dictionary &lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;detailsData&lt;/font&gt;." vertex="1">
+          <mxGeometry height="90" width="200" x="890" y="4910" as="geometry" />
+        </mxCell>
+        <mxCell id="VBEOhlTsfUxGTW4yFh_g-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Would you like to add another? 1 for yes 2 for no:&amp;nbsp;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="930" y="5350" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
