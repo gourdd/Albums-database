@@ -444,69 +444,45 @@
         <mxCell id="xgELYtRN8pwQXO-F7E_u-152" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Invalid input. Please enter again" vertex="1">
           <mxGeometry height="60" width="120" x="1300" y="3430" as="geometry" />
         </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-159" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-158">
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-210" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-209">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-155" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="We now have the&lt;div&gt;artist name =&lt;font style=&quot;background-color: transparent; color: rgb(0, 255, 255);&quot;&gt;inputArtist&lt;/font&gt;&lt;i style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;color: rgb(0, 255, 255);&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;genre_id =&amp;nbsp;&lt;span style=&quot;color: rgb(255, 51, 153); background-color: transparent;&quot;&gt;genreId&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;active = isActive&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(255, 51, 153); background-color: transparent;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;Move onto blob data&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="170" x="1040" y="3560" as="geometry" />
         </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-163" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-162">
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-221" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-160" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="xgELYtRN8pwQXO-F7E_u-219">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1125" y="3820" />
-              <mxPoint x="980" y="3820" />
+              <mxPoint x="1095" y="3890" />
             </Array>
           </mxGeometry>
-        </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-165" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-164">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-167" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-166">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1125" y="3820" />
-              <mxPoint x="1270" y="3820" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-168" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-167" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="isCityKnown" vertex="1">
-          <mxGeometry relative="1" x="-0.8667" y="-2" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-158" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Is&amp;nbsp;&lt;/i&gt;&lt;font style=&quot;background-color: transparent; color: rgb(0, 255, 255);&quot;&gt;inputArtist&lt;/font&gt;&lt;i&gt;&#39;s city known? 1 for yes 2 for no:&amp;nbsp;&lt;/i&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="1065" y="3720" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-160" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Use while-loop to prevent different values.&lt;div&gt;Try-except for ValueError&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="120" x="890" y="3650" as="geometry" />
-        </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-161" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-160" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.19;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="xgELYtRN8pwQXO-F7E_u-158">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-204" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-162" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-202">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry height="80" width="120" x="890" y="3850" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-162" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="if isCityKnown == 1:" vertex="1">
-          <mxGeometry height="60" width="120" x="920" y="3860" as="geometry" />
+          <mxGeometry height="60" width="120" x="920" y="4040" as="geometry" />
         </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-164" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="else:&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;if isCityKnown == 2:&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="135" x="1057.5" y="3860" as="geometry" />
-        </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-171" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-166" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-158">
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-238" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-164" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-237">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1390" y="3890" />
-              <mxPoint x="1390" y="3700" />
-              <mxPoint x="1155" y="3700" />
+              <mxPoint x="1125" y="4420" />
+              <mxPoint x="1180" y="4420" />
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-164" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="else:&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;if isCityKnown == 2:&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="135" x="1057.5" y="4040" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-228" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-166" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-227">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-166" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="else:" vertex="1">
-          <mxGeometry height="60" width="120" x="1210" y="3860" as="geometry" />
+          <mxGeometry height="60" width="120" x="1210" y="4040" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-175" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-172" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="980" y="4270" as="targetPoint" />
+            <mxPoint x="980" y="4240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-176" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-175" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;detailsData[&lt;/font&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&#39;city&#39;&lt;/font&gt;&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;]&lt;/font&gt;" vertex="1">
@@ -515,7 +491,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-172" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;What city are they from?&lt;/i&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="920" y="4160" as="geometry" />
+          <mxGeometry height="60" width="120" x="920" y="4130" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-180" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-178" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-179">
           <mxGeometry relative="1" as="geometry" />
@@ -526,11 +502,11 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-178" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;What country is that city in?&lt;/i&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="920" y="4270" as="geometry" />
+          <mxGeometry height="60" width="120" x="920" y="4240" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-184" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-179" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="980" y="4500" as="targetPoint" />
+            <mxPoint x="980" y="4470" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-185" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-184" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;detailsData[&lt;/font&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&#39;continent&#39;&lt;/font&gt;&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;]&lt;/font&gt;" vertex="1">
@@ -539,25 +515,140 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-179" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;What continent is that country on?&lt;/i&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="920" y="4380" as="geometry" />
+          <mxGeometry height="60" width="120" x="920" y="4350" as="geometry" />
         </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-186" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="100" width="190" x="890" y="4500" as="geometry" />
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-244" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-186" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-230">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-186" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Now &lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;detailsData &lt;/font&gt;is a dictionary that looks like this:&lt;div&gt;{&#39;city&#39;: inputCity, &#39;country&#39;: inputCountry, &#39;continent&#39;: inputContinent}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="210" x="880" y="4470" as="geometry" />
         </mxCell>
         <mxCell id="xgELYtRN8pwQXO-F7E_u-187" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="artistDetails =&amp;nbsp;" vertex="1">
-          <mxGeometry height="70" width="405" x="787.5" y="4700" as="geometry" />
+          <mxGeometry height="70" width="405" x="1300" y="4410" as="geometry" />
         </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-206" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-202" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-205">
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-207" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-172">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="980" y="4100" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-220" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-208" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-219">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-202" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Create an empty dictionary called &lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;detailsData&lt;/font&gt;. User&#39;s input will be added to keys of that dictionary. Which will then be inserted as json blob into the &lt;b&gt;details&lt;/b&gt;&amp;nbsp;column" vertex="1">
-          <mxGeometry height="100" width="180" x="890" y="3950" as="geometry" />
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-208" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;detailsData &lt;/font&gt;= {}" vertex="1">
+          <mxGeometry height="60" width="120" x="1065" y="3820" as="geometry" />
         </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-207" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-205" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-172">
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-212" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-209" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-208">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xgELYtRN8pwQXO-F7E_u-205" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;detailsData &lt;/font&gt;= {}" vertex="1">
-          <mxGeometry height="60" width="120" x="920" y="4070" as="geometry" />
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-209" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Create an empty dictionary called &lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;detailsData&lt;/font&gt;. User&#39;s input for &lt;i&gt;location &lt;/i&gt;and &lt;i&gt;aka &lt;/i&gt;will be added to keys of that dictionary.&amp;nbsp;&lt;span style=&quot;color: rgb(255, 181, 112);&quot;&gt;detailsData&amp;nbsp;&lt;/span&gt;will then be inserted as json blob into the &lt;b&gt;details&lt;/b&gt;&amp;nbsp;column" vertex="1">
+          <mxGeometry height="100" width="212.5" x="1018.75" y="3690" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-222" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-219" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-166">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1125" y="4010" />
+              <mxPoint x="1270" y="4010" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-223" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-219" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-164">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1125" y="4000" />
+              <mxPoint x="1125" y="4000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-225" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-219" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-162">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1125" y="4010" />
+              <mxPoint x="980" y="4010" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-226" connectable="0" parent="xgELYtRN8pwQXO-F7E_u-225" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="isCityKnown" vertex="1">
+          <mxGeometry relative="1" x="-0.8419" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-219" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Is&amp;nbsp;&lt;/i&gt;&lt;font style=&quot;background-color: transparent; color: rgb(0, 255, 255);&quot;&gt;inputArtist&lt;/font&gt;&lt;i&gt;&#39;s city known? 1 for yes 2 for no:&amp;nbsp;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1065" y="3910" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-229" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-227" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-219">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1400" y="4160" />
+              <mxPoint x="1400" y="3890" />
+              <mxPoint x="1155" y="3890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-227" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Invalid input. Please enter again" vertex="1">
+          <mxGeometry height="60" width="120" x="1210" y="4130" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-249" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-230" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-247">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1125" y="4730" />
+              <mxPoint x="990" y="4730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-250" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-230" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-248">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-252" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-230" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-251">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1125" y="4730" />
+              <mxPoint x="1260" y="4730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-230" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;i&gt;Does your artist go by any other names? 1 for yes 2 for no:&amp;nbsp;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1065" y="4640" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-243" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-237" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xgELYtRN8pwQXO-F7E_u-230">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1180" y="4590" />
+              <mxPoint x="1125" y="4590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-237" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(255, 181, 112);&quot;&gt;detailsData&amp;nbsp;&lt;/span&gt;stays empty:&lt;div&gt;{}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1120" y="4470" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-246" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-245" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="xgELYtRN8pwQXO-F7E_u-230">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-245" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Use while-loop to prevent different values.&lt;div&gt;Try-except for ValueError&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="840" y="4580" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-247" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="if hasAka == 1:" vertex="1">
+          <mxGeometry height="60" width="120" x="930" y="4760" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-248" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="else:&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;if hasAka == 2:&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1065" y="4760" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-254" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-251" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-253">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-251" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;div&gt;else:&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1200" y="4760" as="geometry" />
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-255" edge="1" parent="1" source="xgELYtRN8pwQXO-F7E_u-253" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="xgELYtRN8pwQXO-F7E_u-230">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1410" y="4880" />
+              <mxPoint x="1410" y="4620" />
+              <mxPoint x="1155" y="4620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgELYtRN8pwQXO-F7E_u-253" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Invalid input. Please enter again" vertex="1">
+          <mxGeometry height="60" width="120" x="1200" y="4850" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
